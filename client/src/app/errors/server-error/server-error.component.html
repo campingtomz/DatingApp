@@ -1,0 +1,15 @@
+<h4>InterServer Error - refreshing page will make error disappear!</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note if you are seeing this. Angular is not to blame!</p>
+    <p>What to do Next</p>
+    <ol>
+        <li>Open the Chrome dev tools. </li>
+        <li>Inspect the network Tab</li>
+        <li>check Failing request</li>
+        <li>Examine the request URL - make sure it is correct</li>
+        <li>repoduce error in postman</li>
+    </ol>
+<p>following is the stack trace- this is where your investigation should start!</p>
+<code class="mt-5" style="background-color: whitesmoke;">{{error.details}}</code>
+</ng-container>

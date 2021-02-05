@@ -64,3 +64,5 @@ C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.AspNetCore.
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Data\UserSeedData.Json
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

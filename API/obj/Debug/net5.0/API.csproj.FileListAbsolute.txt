@@ -66,3 +66,5 @@ C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.IdentityMod
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Data\UserSeedData.Json
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\CloudinaryDotNet.dll
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Newtonsoft.Json.dll

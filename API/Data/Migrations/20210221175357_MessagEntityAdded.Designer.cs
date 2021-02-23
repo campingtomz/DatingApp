@@ -3,14 +3,16 @@ using System;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20210221175357_MessagEntityAdded")]
+    partial class MessagEntityAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -72,23 +74,20 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Content")
-                        .HasColumnType("TEXT");
-
                     b.Property<DateTime?>("DateRead")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("MessageSent")
                         .HasColumnType("TEXT");
 
+                    b.Property<bool>("RecipentDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("RecipentId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("RecipentUsername")
                         .HasColumnType("TEXT");
-
-                    b.Property<bool>("RecipientDeleted")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("RecipientId")
-                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("SenderDeleted")
                         .HasColumnType("INTEGER");
@@ -99,9 +98,12 @@ namespace API.Data.Migrations
                     b.Property<string>("SenderUsername")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("content")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("RecipientId");
+                    b.HasIndex("RecipentId");
 
                     b.HasIndex("SenderId");
 
@@ -150,9 +152,9 @@ namespace API.Data.Migrations
 
             modelBuilder.Entity("API.Entities.Message", b =>
                 {
-                    b.HasOne("API.Entities.AppUser", "Recipient")
+                    b.HasOne("API.Entities.AppUser", "Recipent")
                         .WithMany("MessagesRecived")
-                        .HasForeignKey("RecipientId")
+                        .HasForeignKey("RecipentId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -162,7 +164,7 @@ namespace API.Data.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("Recipient");
+                    b.Navigation("Recipent");
 
                     b.Navigation("Sender");
                 });

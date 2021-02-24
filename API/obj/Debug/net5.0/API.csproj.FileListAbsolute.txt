@@ -68,3 +68,8 @@ C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\CloudinaryDotNet.dll
 C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\campi\source\repos\DatingApp\API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
